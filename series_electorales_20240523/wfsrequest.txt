@@ -1,0 +1,1 @@
+https://mapas.ide.uy/geoserver-vectorial/CorteElectoral/wfs?service=WFS&request=GetFeature&version=1.0.0&outputFormat=shape-zip&typeName=series_electorales_20240523
