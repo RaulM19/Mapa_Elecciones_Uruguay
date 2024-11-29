@@ -59,7 +59,7 @@ capa_ganador_2024 = folium.GeoJson(
 )
 
 
-K= 20 # Top municipios con mayor diferencia de votos
+K= 25 # Top municipios con mayor diferencia de votos
 geojson_data=obtener_k_municipios_mayor_diferencia(geojson_data, K) 
 
 
@@ -89,13 +89,13 @@ capa_top_k_F = folium.GeoJson(
 
 
 # Agregar ambas capas al mapa
-capa_ganador_2019.add_to(mapa)
 capa_ganador_2024.add_to(mapa)
+capa_ganador_2019.add_to(mapa)
 capa_top_k_N.add_to(mapa)
 capa_top_k_F.add_to(mapa)
 
 # Crear un control de capas para alternar entre las capas
-folium.LayerControl(position='topright', collapsed=True).add_to(mapa)
+folium.LayerControl(position='topright', collapsed=False).add_to(mapa)
 
 
 
